@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services ../vendor/symfony/dependency-injection/Loader/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="books.collection" class="Lcobucci\MyApi\JsonBookCollection" public="false">
+            <argument>%app.basedir%tmp/books.json</argument>
+        </service>
+
+        <service id="books.fetch_one" class="Lcobucci\MyApi\Retrieval\FetchBookHandler" public="false">
+            <argument type="service" id="books.collection" />
+
+            <tag name="chimera.bus_handler" bus="bus.query" handles="Lcobucci\MyApi\Retrieval\FetchBook" />
+
+            <tag name="chimera.http_route" app="my-api" route_name="book.fetch_one"
+                 type="fetch" path="/books/{id}"
+                 query="Lcobucci\MyApi\Retrieval\FetchBook" />
+        </service>
+
+        <service id="books.find" class="Lcobucci\MyApi\Retrieval\FindBooksHandler" public="false">
+            <argument type="service" id="books.collection" />
+
+            <tag name="chimera.bus_handler" bus="bus.query" handles="Lcobucci\MyApi\Retrieval\FindBooks" />
+
+            <tag name="chimera.http_route" app="my-api" route_name="book.find"
+                 type="fetch" path="/books"
+                 query="Lcobucci\MyApi\Retrieval\FindBooks" />
+        </service>
+
+        <service id="books.add" class="Lcobucci\MyApi\Creation\AddToCollectionHandler" public="false">
+            <argument type="service" id="books.collection" />
+
+            <tag name="chimera.bus_handler" bus="bus.command" handles="Lcobucci\MyApi\Creation\AddToCollection" />
+
+            <tag name="chimera.http_route" app="my-api" route_name="book.create"
+                 type="create" path="/books" redirect_to="book.fetch_one"
+                 command="Lcobucci\MyApi\Creation\AddToCollection" />
+        </service>
+    </services>
+</container>
