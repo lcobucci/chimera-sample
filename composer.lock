@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "01d71e16f94cae78b4b9d66d80b6361d",
+    "content-hash": "c368ff4f68bbf120fec7741294533cea",
     "packages": [
         {
             "name": "fig/http-message-util",
@@ -110,21 +110,21 @@
         },
         {
             "name": "lcobucci/chimera-bus-tactician",
-            "version": "v1.0.0-alpha1",
+            "version": "v1.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lcobucci/chimera-bus-tactician.git",
-                "reference": "d778a007f346fbb3feee82fc223fda85ebb96774"
+                "reference": "62b7a573626a675e0752e826a0b9142307e0cea9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/chimera-bus-tactician/zipball/d778a007f346fbb3feee82fc223fda85ebb96774",
-                "reference": "d778a007f346fbb3feee82fc223fda85ebb96774",
+                "url": "https://api.github.com/repos/lcobucci/chimera-bus-tactician/zipball/62b7a573626a675e0752e826a0b9142307e0cea9",
+                "reference": "62b7a573626a675e0752e826a0b9142307e0cea9",
                 "shasum": ""
             },
             "require": {
-                "lcobucci/chimera-foundation": "1.0.0-alpha1@alpha",
-                "lcobucci/chimera-routing": "1.0.0-alpha1@alpha",
+                "lcobucci/chimera-foundation": "^1.0@alpha",
+                "lcobucci/chimera-routing": "^1.0@alpha",
                 "league/tactician": "^1.0",
                 "php": "^7.1"
             },
@@ -161,7 +161,7 @@
                 }
             ],
             "description": "Tactician implementation connecting lcobucci/chimera-foundation and lcobucci/chimera-routing",
-            "time": "2017-10-12T08:34:18+00:00"
+            "time": "2017-10-30T13:17:19+00:00"
         },
         {
             "name": "lcobucci/chimera-foundation",
@@ -212,21 +212,21 @@
         },
         {
             "name": "lcobucci/chimera-routing",
-            "version": "v1.0.0-alpha1",
+            "version": "v1.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lcobucci/chimera-routing.git",
-                "reference": "18d6a5bca7cd38b033401baae8ef5a4682ec6eed"
+                "reference": "86b5d395ddf80940a1906e949c35c6cbbdd8ddb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/chimera-routing/zipball/18d6a5bca7cd38b033401baae8ef5a4682ec6eed",
-                "reference": "18d6a5bca7cd38b033401baae8ef5a4682ec6eed",
+                "url": "https://api.github.com/repos/lcobucci/chimera-routing/zipball/86b5d395ddf80940a1906e949c35c6cbbdd8ddb4",
+                "reference": "86b5d395ddf80940a1906e949c35c6cbbdd8ddb4",
                 "shasum": ""
             },
             "require": {
                 "http-interop/http-middleware": "^0.4",
-                "lcobucci/chimera-foundation": "1.0.0-alpha1@alpha",
+                "lcobucci/chimera-foundation": "^1.0@alpha",
                 "php": "^7.1"
             },
             "require-dev": {
@@ -257,26 +257,26 @@
                 }
             ],
             "description": "A collection of reusable PSR-15 middlewares that connects chimerra-foundation to any framework",
-            "time": "2017-10-12T08:31:14+00:00"
+            "time": "2017-10-30T13:19:18+00:00"
         },
         {
             "name": "lcobucci/chimera-routing-expressive",
-            "version": "v1.0.0-alpha1",
+            "version": "v1.0.0-alpha2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lcobucci/chimera-routing-expressive.git",
-                "reference": "4ead5cb8f9ff4ff0965528753156936fc9497fc4"
+                "reference": "e33518879e36b414a3db22c2a3361e8fd5474b8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lcobucci/chimera-routing-expressive/zipball/4ead5cb8f9ff4ff0965528753156936fc9497fc4",
-                "reference": "4ead5cb8f9ff4ff0965528753156936fc9497fc4",
+                "url": "https://api.github.com/repos/lcobucci/chimera-routing-expressive/zipball/e33518879e36b414a3db22c2a3361e8fd5474b8b",
+                "reference": "e33518879e36b414a3db22c2a3361e8fd5474b8b",
                 "shasum": ""
             },
             "require": {
                 "http-interop/http-middleware": "^0.4",
-                "lcobucci/chimera-foundation": "1.0.0-alpha1@alpha",
-                "lcobucci/chimera-routing": "1.0.0-alpha1@alpha",
+                "lcobucci/chimera-foundation": "^1.0@alpha",
+                "lcobucci/chimera-routing": "^1.0@alpha",
                 "php": "^7.1",
                 "ramsey/uuid": "^3.7",
                 "zendframework/zend-expressive": "^2.0",
@@ -310,7 +310,7 @@
                 }
             ],
             "description": "Zend Expressive implementation for lcobucci/chimera-routing",
-            "time": "2017-10-12T08:37:03+00:00"
+            "time": "2017-10-30T13:23:17+00:00"
         },
         {
             "name": "lcobucci/di-builder",
@@ -887,27 +887,26 @@
         },
         {
             "name": "symfony/cache",
-            "version": "v3.3.10",
+            "version": "v4.0.0-BETA1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache.git",
-                "reference": "5f78b9728869434a445bdd86d63ef723f93e5433"
+                "reference": "db9ae7091df02854cc3849e160ec58b19451d8e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache/zipball/5f78b9728869434a445bdd86d63ef723f93e5433",
-                "reference": "5f78b9728869434a445bdd86d63ef723f93e5433",
+                "url": "https://api.github.com/repos/symfony/cache/zipball/db9ae7091df02854cc3849e160ec58b19451d8e1",
+                "reference": "db9ae7091df02854cc3849e160ec58b19451d8e1",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9|>=7.0.8",
+                "php": "^7.1.3",
                 "psr/cache": "~1.0",
                 "psr/log": "~1.0",
-                "psr/simple-cache": "^1.0",
-                "symfony/polyfill-apcu": "~1.1"
+                "psr/simple-cache": "^1.0"
             },
             "conflict": {
-                "symfony/var-dumper": "<3.3"
+                "symfony/var-dumper": "<3.4"
             },
             "provide": {
                 "psr/cache-implementation": "1.0",
@@ -922,7 +921,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "4.0-dev"
                 }
             },
             "autoload": {
@@ -953,34 +952,34 @@
                 "caching",
                 "psr6"
             ],
-            "time": "2017-10-04T07:58:49+00:00"
+            "time": "2017-10-05T15:11:25+00:00"
         },
         {
             "name": "symfony/config",
-            "version": "v3.3.10",
+            "version": "v3.4.0-BETA1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "4ab62407bff9cd97c410a7feaef04c375aaa5cfd"
+                "reference": "cafadff3df9c9750997eb45f1a1597487d5228ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/4ab62407bff9cd97c410a7feaef04c375aaa5cfd",
-                "reference": "4ab62407bff9cd97c410a7feaef04c375aaa5cfd",
+                "url": "https://api.github.com/repos/symfony/config/zipball/cafadff3df9c9750997eb45f1a1597487d5228ef",
+                "reference": "cafadff3df9c9750997eb45f1a1597487d5228ef",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
-                "symfony/filesystem": "~2.8|~3.0"
+                "symfony/filesystem": "~2.8|~3.0|~4.0"
             },
             "conflict": {
                 "symfony/dependency-injection": "<3.3",
                 "symfony/finder": "<3.3"
             },
             "require-dev": {
-                "symfony/dependency-injection": "~3.3",
-                "symfony/finder": "~3.3",
-                "symfony/yaml": "~3.0"
+                "symfony/dependency-injection": "~3.3|~4.0",
+                "symfony/finder": "~3.3|~4.0",
+                "symfony/yaml": "~3.0|~4.0"
             },
             "suggest": {
                 "symfony/yaml": "To use the yaml reference dumper"
@@ -988,7 +987,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -1015,20 +1014,20 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-04T18:56:58+00:00"
+            "time": "2017-10-10T10:38:39+00:00"
         },
         {
             "name": "symfony/dependency-injection",
-            "version": "v3.3.10",
+            "version": "v3.4.0-BETA1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dependency-injection.git",
-                "reference": "8ebad929aee3ca185b05f55d9cc5521670821ad1"
+                "reference": "3410531eaaaefb4cf37220d088e0daaf8b35f2b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/8ebad929aee3ca185b05f55d9cc5521670821ad1",
-                "reference": "8ebad929aee3ca185b05f55d9cc5521670821ad1",
+                "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/3410531eaaaefb4cf37220d088e0daaf8b35f2b6",
+                "reference": "3410531eaaaefb4cf37220d088e0daaf8b35f2b6",
                 "shasum": ""
             },
             "require": {
@@ -1038,15 +1037,16 @@
             "conflict": {
                 "symfony/config": "<3.3.1",
                 "symfony/finder": "<3.3",
-                "symfony/yaml": "<3.3"
+                "symfony/proxy-manager-bridge": "<3.4",
+                "symfony/yaml": "<3.4"
             },
             "provide": {
                 "psr/container-implementation": "1.0"
             },
             "require-dev": {
-                "symfony/config": "~3.3",
-                "symfony/expression-language": "~2.8|~3.0",
-                "symfony/yaml": "~3.3"
+                "symfony/config": "~3.3|~4.0",
+                "symfony/expression-language": "~2.8|~3.0|~4.0",
+                "symfony/yaml": "~3.4|~4.0"
             },
             "suggest": {
                 "symfony/config": "",
@@ -1058,7 +1058,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -1085,30 +1085,30 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-04T17:15:30+00:00"
+            "time": "2017-10-18T12:27:18+00:00"
         },
         {
             "name": "symfony/expression-language",
-            "version": "v3.3.10",
+            "version": "v3.4.0-BETA1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/expression-language.git",
-                "reference": "6e8837e9e18d3b16c5e8379b519d030aa3a08a0c"
+                "reference": "9000ea00ddc5f3eabbe8bde0e39de7e47fd8b490"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/expression-language/zipball/6e8837e9e18d3b16c5e8379b519d030aa3a08a0c",
-                "reference": "6e8837e9e18d3b16c5e8379b519d030aa3a08a0c",
+                "url": "https://api.github.com/repos/symfony/expression-language/zipball/9000ea00ddc5f3eabbe8bde0e39de7e47fd8b490",
+                "reference": "9000ea00ddc5f3eabbe8bde0e39de7e47fd8b490",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
-                "symfony/cache": "~3.1"
+                "symfony/cache": "~3.1|~4.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -1135,29 +1135,29 @@
             ],
             "description": "Symfony ExpressionLanguage Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-02T06:42:24+00:00"
+            "time": "2017-10-02T06:49:52+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.3.10",
+            "version": "v4.0.0-BETA1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "90bc45abf02ae6b7deb43895c1052cb0038506f1"
+                "reference": "0b7b72accd621086b686fa1cd8fdb7f5e0c77628"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/90bc45abf02ae6b7deb43895c1052cb0038506f1",
-                "reference": "90bc45abf02ae6b7deb43895c1052cb0038506f1",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/0b7b72accd621086b686fa1cd8fdb7f5e0c77628",
+                "reference": "0b7b72accd621086b686fa1cd8fdb7f5e0c77628",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9|>=7.0.8"
+                "php": "^7.1.3"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "4.0-dev"
                 }
             },
             "autoload": {
@@ -1184,73 +1184,20 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2017-10-03T13:33:10+00:00"
-        },
-        {
-            "name": "symfony/polyfill-apcu",
-            "version": "v1.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-apcu.git",
-                "reference": "cec32398a973a9bfe9d2f94f4b5d5e186b40b698"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-apcu/zipball/cec32398a973a9bfe9d2f94f4b5d5e186b40b698",
-                "reference": "cec32398a973a9bfe9d2f94f4b5d5e186b40b698",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.5-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting apcu_* functions to lower PHP versions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "apcu",
-                "compatibility",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "time": "2017-07-05T15:09:33+00:00"
+            "time": "2017-10-06T12:47:08+00:00"
         },
         {
             "name": "webimpress/composer-extra-dependency",
-            "version": "0.2.0",
+            "version": "0.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webimpress/composer-extra-dependency.git",
-                "reference": "97c241b2c80628a2cd1002cece3fc54c419b1776"
+                "reference": "31fa56391d30f03b1180c87610cbe22254780ad9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webimpress/composer-extra-dependency/zipball/97c241b2c80628a2cd1002cece3fc54c419b1776",
-                "reference": "97c241b2c80628a2cd1002cece3fc54c419b1776",
+                "url": "https://api.github.com/repos/webimpress/composer-extra-dependency/zipball/31fa56391d30f03b1180c87610cbe22254780ad9",
+                "reference": "31fa56391d30f03b1180c87610cbe22254780ad9",
                 "shasum": ""
             },
             "require": {
@@ -1283,29 +1230,29 @@
                 "dependency",
                 "webimpress"
             ],
-            "time": "2017-10-11T22:05:48+00:00"
+            "time": "2017-10-17T17:15:14+00:00"
         },
         {
             "name": "webimpress/http-middleware-compatibility",
-            "version": "0.1.3",
+            "version": "0.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webimpress/http-middleware-compatibility.git",
-                "reference": "5839f5abf54346eafa6617434bd5f618c0cc7adb"
+                "reference": "8ed1c2c7523dce0035b98bc4f3a73ca9cd1d3717"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webimpress/http-middleware-compatibility/zipball/5839f5abf54346eafa6617434bd5f618c0cc7adb",
-                "reference": "5839f5abf54346eafa6617434bd5f618c0cc7adb",
+                "url": "https://api.github.com/repos/webimpress/http-middleware-compatibility/zipball/8ed1c2c7523dce0035b98bc4f3a73ca9cd1d3717",
+                "reference": "8ed1c2c7523dce0035b98bc4f3a73ca9cd1d3717",
                 "shasum": ""
             },
             "require": {
                 "http-interop/http-middleware": "^0.1.1 || ^0.2 || ^0.3 || ^0.4.1 || ^0.5",
                 "php": "^5.6 || ^7.0",
-                "webimpress/composer-extra-dependency": "^0.2"
+                "webimpress/composer-extra-dependency": "^0.2.2"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5.7.22 || ^6.3.1"
+                "phpunit/phpunit": "^5.7.23 || ^6.4.3"
             },
             "type": "library",
             "extra": {
@@ -1329,20 +1276,20 @@
                 "psr-15",
                 "webimpress"
             ],
-            "time": "2017-10-11T22:13:48+00:00"
+            "time": "2017-10-17T17:31:10+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "2faa791b66bac33ca40031d8bce03b7dc8143490"
+                "reference": "c8664b92a6d5bc229e48b0923486c097e45a7877"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/2faa791b66bac33ca40031d8bce03b7dc8143490",
-                "reference": "2faa791b66bac33ca40031d8bce03b7dc8143490",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/c8664b92a6d5bc229e48b0923486c097e45a7877",
+                "reference": "c8664b92a6d5bc229e48b0923486c097e45a7877",
                 "shasum": ""
             },
             "require": {
@@ -1381,7 +1328,7 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2017-09-13T14:47:08+00:00"
+            "time": "2017-10-12T15:24:51+00:00"
         },
         {
             "name": "zendframework/zend-escaper",
@@ -1714,22 +1661,22 @@
         },
         {
             "name": "zendframework/zend-stratigility",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-stratigility.git",
-                "reference": "e2b165ebd0a466fc44fbcb633f25ccc44dd5915b"
+                "reference": "7dfec8dee92dad0d01e68365015f2848c250fe9f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-stratigility/zipball/e2b165ebd0a466fc44fbcb633f25ccc44dd5915b",
-                "reference": "e2b165ebd0a466fc44fbcb633f25ccc44dd5915b",
+                "url": "https://api.github.com/repos/zendframework/zend-stratigility/zipball/7dfec8dee92dad0d01e68365015f2848c250fe9f",
+                "reference": "7dfec8dee92dad0d01e68365015f2848c250fe9f",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.6 || ^7.0",
                 "psr/http-message": "^1.0",
-                "webimpress/http-middleware-compatibility": "^0.1.1",
+                "webimpress/http-middleware-compatibility": "^0.1.3",
                 "zendframework/zend-escaper": "^2.3"
             },
             "require-dev": {
@@ -1764,16 +1711,13 @@
                 "middleware",
                 "psr-7"
             ],
-            "time": "2017-10-10T14:08:33+00:00"
+            "time": "2017-10-12T13:14:14+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "alpha",
-    "stability-flags": {
-        "lcobucci/chimera-bus-tactician": 15,
-        "lcobucci/chimera-routing-expressive": 15
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -17,8 +17,8 @@
     "require": {
         "php": "^7.1",
         "http-interop/http-middleware": "^0.4",
-        "lcobucci/chimera-bus-tactician": "1.0.0-alpha1",
-        "lcobucci/chimera-routing-expressive": "1.0.0-alpha1",
+        "lcobucci/chimera-bus-tactician": "^1.0",
+        "lcobucci/chimera-routing-expressive": "^1.0",
         "lcobucci/di-builder": "^5.0",
         "league/tactician-container": "^2.0"
     },
