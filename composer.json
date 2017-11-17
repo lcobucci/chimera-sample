@@ -19,7 +19,7 @@
         "http-interop/http-middleware": "^0.4",
         "lcobucci/chimera-bus-tactician": "^1.0",
         "lcobucci/chimera-routing-expressive": "^1.0",
-        "lcobucci/di-builder": "^5.0",
+        "lcobucci/di-builder": "^5.2",
         "league/tactician-container": "^2.0"
     },
     "autoload": {

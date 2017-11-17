@@ -20,9 +20,10 @@ $cacheDir = realpath(dirname(__DIR__) . '/tmp/cache');
 return $builder->setParameter('app.basedir', realpath(dirname(__DIR__)) . '/')
                ->addFile(__DIR__ . '/../src/services.xml')
                ->setDumpDir($cacheDir)
-               ->addPass(new Bus\RegisterServices('bus.command', 'bus.query'))
-               ->addPass(
-                   new Routing\RegisterServices(
+               ->addDelayedPass(Bus\RegisterServices::class, ['bus.command', 'bus.query'])
+               ->addDelayedPass(
+                   Routing\RegisterServices::class,
+                   [
                        'my-api',
                        'bus.command',
                        'bus.query',
@@ -32,5 +33,5 @@ return $builder->setParameter('app.basedir', realpath(dirname(__DIR__)) . '/')
                                FastRouteRouter::CONFIG_CACHE_FILE => $cacheDir . '/router.cache.php',
                            ],
                        ]
-                   )
+                   ]
                )->getContainer();

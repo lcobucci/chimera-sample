@@ -3,11 +3,13 @@
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:schemaLocation="http://symfony.com/schema/dic/services ../vendor/symfony/dependency-injection/Loader/schema/dic/services/services-1.0.xsd">
     <services>
-        <service id="books.collection" class="Lcobucci\MyApi\JsonBookCollection" public="false">
+        <defaults public="false" />
+
+        <service id="books.collection" class="Lcobucci\MyApi\JsonBookCollection">
             <argument>%app.basedir%tmp/books.json</argument>
         </service>
 
-        <service id="books.fetch_one" class="Lcobucci\MyApi\Retrieval\FetchBookHandler" public="false">
+        <service id="books.fetch_one" class="Lcobucci\MyApi\Retrieval\FetchBookHandler">
             <argument type="service" id="books.collection" />
 
             <tag name="chimera.bus_handler" bus="bus.query" handles="Lcobucci\MyApi\Retrieval\FetchBook" />
@@ -17,7 +19,7 @@
                  query="Lcobucci\MyApi\Retrieval\FetchBook" />
         </service>
 
-        <service id="books.find" class="Lcobucci\MyApi\Retrieval\FindBooksHandler" public="false">
+        <service id="books.find" class="Lcobucci\MyApi\Retrieval\FindBooksHandler">
             <argument type="service" id="books.collection" />
 
             <tag name="chimera.bus_handler" bus="bus.query" handles="Lcobucci\MyApi\Retrieval\FindBooks" />
@@ -27,7 +29,7 @@
                  query="Lcobucci\MyApi\Retrieval\FindBooks" />
         </service>
 
-        <service id="books.add" class="Lcobucci\MyApi\Creation\AddToCollectionHandler" public="false">
+        <service id="books.add" class="Lcobucci\MyApi\Creation\AddToCollectionHandler">
             <argument type="service" id="books.collection" />
 
             <tag name="chimera.bus_handler" bus="bus.command" handles="Lcobucci\MyApi\Creation\AddToCollection" />

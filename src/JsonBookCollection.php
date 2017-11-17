@@ -6,6 +6,8 @@ namespace Lcobucci\MyApi;
 use Lcobucci\Persistence\NaiveJsonRepository;
 use Ramsey\Uuid\Uuid;
 use Ramsey\Uuid\UuidInterface;
+use function array_filter;
+use function array_values;
 
 final class JsonBookCollection extends NaiveJsonRepository implements BookCollection
 {

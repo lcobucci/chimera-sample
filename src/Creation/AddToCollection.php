@@ -6,6 +6,8 @@ namespace Lcobucci\MyApi\Creation;
 use Lcobucci\Chimera\Routing\Attributes;
 use Psr\Http\Message\ServerRequestInterface;
 use Ramsey\Uuid\UuidInterface;
+use function json_decode;
+use function json_last_error;
 
 final class AddToCollection
 {

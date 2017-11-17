@@ -3,6 +3,16 @@ declare(strict_types=1);
 
 namespace Lcobucci\Persistence;
 
+use function array_map;
+use function array_values;
+use function file_exists;
+use function file_get_contents;
+use function file_put_contents;
+use function json_decode;
+use function json_encode;
+use function sha1;
+use function sha1_file;
+
 abstract class NaiveJsonRepository
 {
     /**
@@ -28,7 +38,7 @@ abstract class NaiveJsonRepository
     {
         $content = $this->toContent();
 
-        if (! file_exists($this->filename) || sha1($content) !== sha1_file($this->filename)) {
+        if (!file_exists($this->filename) || sha1($content) !== sha1_file($this->filename)) {
             file_put_contents($this->filename, $content, LOCK_EX);
         }
     }
